@@ -1,0 +1,187 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+	
+	<style type="text/css">
+<!--
+body{
+	font-family: 'Verdana';
+	margin: 1.5cm;
+	color: #B00732;
+	background-color: white;
+	
+}
+h1, h2, h3{
+	font-family: 'Impact';
+}
+
+.gelb{
+color: yellow;
+}
+
+.weiss{
+color: white;
+}
+
+.schwarz{
+color: black;
+}
+
+.orange{
+color: orange;
+}
+
+.grün{
+color: #20FB1C;
+}
+
+.pinkrot{
+color: #860F2D;
+-->
+</style>
+	
+		<title>
+			Kalles Praktikum bei mtc
+		</title>
+	</head>
+	<body>
+	
+	<h1 class=pinkrot>Was macht mtc?</h1>
+	
+	<p>
+		<strong>mtc (Moving Targets Consulting) hat zwei Bereiche, Patente und Bayer. 
+		Ich werde vor allem den Bereich Patente kennenlernen.</strong>
+	</p>
+	
+	<p>
+		Ein Produkt von mtc was mit dem Thema Patente zu tun hat ist Deparom. Wenn man Deparom kauft bekommt man über 1 Jahr ab und zu eine DVD per Post geschickt. Auf der DVD sind Patentdaten, auch Patentschrift genannt, vorzufinden. Man kann also sehen was in letzter Zeit so für Erfindungen bzw. Patente auf Erfindungen erschienen sind. <strong>Das kann für vor allem Firmen sehr nützlich sein, denn sie können dann überpruefen ob einer ihrer Erfindungen schon auf Patent von jemand anderen sind, oder einfach was gerade die Konkurrenz fuer Erfindungen schafft.</strong>
+	</p>
+	
+	<p>
+		Es gibt noch eine zweite Form von Deparom, und zwar Deparom Profil. Das ist wieder das gleiche Prinzip (Patentdaten auf eine DVD gespeichert) aber etwas detaillierter für den Kunden. <strong>Denn damit bekommt der Kunde nur die Patentdaten zugeschickt die für ihn relevant sind.</strong> Zum Beispiel wenn ich bei einem Autounternehmen bin, bekomme ich nur die Patentschriften zugeschickt die etwas mit Autos zu tuhen haben. Deparom Profil kostet aber auch natürlich mehr. Wenn man das normale Deparom für 1 Jahr in XML und in PDF-Format bestellt, zahlt man 2.500 Euro. Wenn man aber nur eine der beiden Formate bestellt zahlt man nur noch 1.500 Euro.
+	</p>
+	
+	<p>
+		Natürlich werden die ganzen Patentschriften auch in ein System eingeteilt, was IPC (International Patent Klassifikation) heißt. 
+		Dass heißt <strong>jede Patentschrift bekommt ein Code, aus dem man dann lesen kann worum es in der Schrift geht.
+		</strong> Ein Beispiel ist der Code C12Q1|68. Jeder Buchstabe steht für einen Bereich, also wird es für jede Zahl/Buchstabe komplizierter. 
+		C steht für Chemie und Hüttenwesen. Dann kann man auf das C klicken und sieht alle Unterklassen. 
+		In diesem Fall haben wir C12. Das steht für Biochemie. Dann Q also C12Q. Das ist Untersuchungsverfahren unter Einbeziehung von Enzymen oder Mikroorganismen. 
+		Dann gibt es noch eine letzte Unterklasse und zwar 1|Zahl, in diesem Fall 1|68. Das steht für Nucleinsäuren. Insgesamt ist also der Code C12Q1|68 und steht für Nucleinsäuren. 
+		So funktioniert das Code-System vom deutschen Patentamt. 
+		Es ist sehr komplex und kompliziert, <strong>aber der Kunde weiß ja den/die Code/s die für ihn interessant sind, und so kann er also schnell überprüfen was die Konkurrenz in seinem Bereich macht.</strong>
+	</p>
+		</body>
+</html>
+
+
+	<h1 class="pinkrot">
+			iNCO/PatProd: Erstellen einer Patentschrift
+	</h1>		
+		</p>
+		
+		<p>	
+			Anmelder reichen Patentanträge beim DPMA ein, als Papier, Fax, PDF
+            Bundesdruckerei / iNCO produzieren daraus ein einheitliches PDF / XML
+			Für das umwandeln von gescannten Texten in eine PDF-Datei werden mehrere Arbeitsschritte benötigt.
+		</p>		
+		
+	<h2 class="pinkrot">
+		PatProd Server
+	</h2>
+		<p>
+			Auf der Plattform PatProd werden die unterschiedlichen Dateien angezeigt, ihren Status und weitere Infos. 
+			Der Status wird per Zahlen angezeigt. 
+			60 heißt verteilt, 70 gerahmt und wenn es in der OCR war dann ist der Status 230.
+		</p>
+	<p><h2 class="pinkrot">Erfassung</h2></p>
+	
+		<h3 class="pinkrot">Rahmung</h3>
+			<p>
+				Zuerst muss das Bild gerahmt werden.
+				Dass heißt das einige Abschnitte (zum Beispiel Überschrift, Seitenzahl usw.) werden abgeschnitten, damit nur noch das überbleibt, was auf das PDF soll.
+			</p>
+			
+		<h3 class="pinkrot">Bildbearbeitung</h3>
+			<p>
+				Das Bild wird bis auf die äustersten Pixel geschnitten so das ganz am Rand der äuserste Pixel des Bildes ist.
+				Eventuell wird das Bild noch grade gemacht, wenn dies gebraucht wird.
+				Es werden kleine Flecken auf dem Bild oder sonstige Sachen die nicht auf dem Bild sein sollen per Hand entfernt.
+			</p>
+		
+		<h3 class="pinkrot">OCR</h3>
+			<p>
+				Es gibt den Volltext-PDF und den Bild-PDF. 
+				Das Bild-PDF ist ein eingescanntes Blatt. Das Volltext-PDF hingegen ist ein gewönlicher Text der zum Beispiel bei Word erschaffen werden kann. 
+				Der Nachteil an dem Bild-PDF ist das es beim einscannen etwas schief liegen kann oder ein Fleck drauf ist, so dass es noch später nachbearbeitet werden muss.
+				<p>
+				Dann kommt es in die OCR, die die Datei von einem Bild in ein XML verarbeitet.
+				Sie zeigt ausserdem undeutliche Stellen an, wo sie sich nicht sicher ist was für ein Buchstabe oder Zahl zu sehen ist.
+			    </p>
+				</p>
+				
+		<h3 class="pinkrot">XML Korrektur</h3>
+			
+			<p>
+				Da die OCR viele Fehler macht* (zum Beispiel fü zu fl macht) *muss der Text nach der OCR noch ein mal korrigiert werden.
+			</p>
+			
+		<h3 class="pinkrot">Pre-Satz</h3>
+
+			<p>
+				Die Bibliografie und das Manuskript werden zusammengefügt und daraus ensteht das Master-XML. 
+				Das ist die Datei die dann letztendlich zur PDF-Datei umgewandelt wird. (Zusammenfügen Bibliografie / Manuskript).
+			</p>
+		
+		<h3 class="pinkrot">Satz</h3>	
+			
+			<p>
+				mtc nutzt XSL-FO ( für die Konvertierung der Master-XMLs nach PDF).
+				Das Master-XML wird ins PDF-Format umgewandelt
+				Dann wird es zum PDF und die Patentschrift ist fertig.
+				Das schreiben so einer Patentschrift dauert Insgesamt ca. 15 Minuten, 
+				bei einigen kann es aber auch deutsclich länger dauern, das ist von der Seitenanzahl abhängig.
+			</p>
+			
+			
+	<h1 class="pinkrot">Probleme beim umwandeln von PDF nach TIFF</h1>
+		
+		<h3 class="pinkrot">Hintergrund</h3>
+			
+			<p>
+				iNCO bekommt vom DPMA PDF Manusskripte, aus denen die Patentschriften produziert werden.
+				Diese werden per Import zu PatProd hinzugefügt und zur Verarbeitung vorbereitet.
+				Die PDF-Dateien müssen in TIFF umgewandelt werden, damit sie gerahmt werden können. 
+				Das Programm mit dem man die Bilder rahmt, kann nur TIFF anzeigen.
+		    </p> 
+			
+		<h3 class=pinkrot>Problembeschreibung</h3>
+			
+			<p>
+				Es gibt ein Problem mit dem PDF-Konventierungsprogramm. 
+				Eigentlich sollte das PDF in TIFF umgewandelt sein und man sollte die Seite des PDFs wiedersehen nur halt in TIFF. 
+				Das Problem ist nun dass beim Konvertieren der PDF-Datei irgendetwas schiefläuft, 
+				denn bei dem TIFF sieht man nur die Zahlen am Rand, und nicht die Zeichnung.
+			</p>
+
+		<h3 class=pinkrot>Analyse</h3>
+			
+			<p>
+				Um das Problem zu lösen, sind wir in den Log des Servers gegangen und haben nach "Error" gesucht, 
+				um alle Fehler angezeigt zu bekommen. Da konnte man dann alle Seiten sehen, die Probleme hatten. 
+				Außerdem konnte man dort das Aktenzeichen sehen.
+				Wir haben versucht, die Konvertierung manuell zu machen. Erst per Skript und als dies nicht gelang per Kommandozeile. 
+				Dann versuchten wir, den Debug-Level hochzustellen, wodurch man mehr Fehlermeldungen erhält. 
+				Aber auch weiterhin hat Ghostscript keine Fehlermeldung angezeigt.
+				Dann wurden der Kunde im Ticket informiert, dass es ein Problem gibt und sie es auf ihrem eigenen Server überprüfen sollten.
+				Das Aktenzeichen haben wir später auch in PatProd gesehen und zwar nicht auf der Zustandsliste.
+				Dann hat iNCO angerufen und erzählt, dass die zwei problematischen Dateien bei Ihnen vollständig sind.
+			</p>
+			
+		<h3 class=pinkrot>Was ist die Zustandsliste?</h3>	
+			
+			<p>
+				Die Zustandsliste ist ein Status bei PatProd. Aktenzeichen, die auf die Zustandsliste kommen, haben irgendwelche Probleme oder Fehler. 
+				Aktenzeichen auf der Zustandsliste werden nach einer Woche an das DPMA zurück gemeldet und werden nicht veröffentlicht.	
+			</p>
+			
